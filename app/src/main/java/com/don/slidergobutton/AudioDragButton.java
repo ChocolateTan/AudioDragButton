@@ -25,8 +25,8 @@ public class AudioDragButton extends AppCompatButton {
   private int screenHeight;             //屏幕寬度
   private boolean isDragLeft = true;   //X軸，左滑，右滑設置
   private int maxCancelWidth = 500;     //最大取消距離
-  private float mScaleX = 2.0f;         //按鈕放大X
-  private float mScaleY = 2.0f;         //按鈕放大Y
+  private float mScaleX = 2.5f;         //按鈕放大X
+  private float mScaleY = 2.5f;         //按鈕放大Y
   private AudioDragDelegate mAudioDragDelegate;
   private boolean isCancel = false;
   private boolean isFirst = false;
@@ -170,7 +170,7 @@ public class AudioDragButton extends AppCompatButton {
         }
         if (bottom > screenHeight) {
           bottom = screenHeight;
-          top = bottom - this.getHeight();
+//          top = bottom - this.getHeight();
         }
         this.layout(left, startTop, right, startBottom);
         // 将当前的位置再次设置
