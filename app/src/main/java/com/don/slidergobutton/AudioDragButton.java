@@ -141,7 +141,10 @@ public class AudioDragButton extends AppCompatButton {
         // 取消錄音
         if (Math.abs(event.getRawX() - startX) >= maxCancelWidth) {
           this.layout(startLeft, startTop, startRight, startBottom);
-          view.layout(moveViewStartLeft, moveViewStartTop, moveViewStartRight, moveViewStartBottom);
+          if(null != view) {
+            view.layout(moveViewStartLeft, moveViewStartTop, moveViewStartRight,
+                moveViewStartBottom);
+          }
           this.animate().setDuration(0).scaleX(1.0f);
           this.animate().setDuration(0).scaleY(1.0f);
           this.setPressed(false);
