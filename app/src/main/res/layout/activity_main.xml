@@ -11,7 +11,7 @@
     android:layout_toLeftOf="@+id/btn_audio_drag"
     android:layout_toStartOf="@+id/btn_audio_drag" />
 
-  <com.don.slidergobutton.AudioDragButtonWithText
+  <com.don.slidergobutton.AudioDragButton
     android:id="@+id/btn_audio_drag"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
